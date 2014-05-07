@@ -7,6 +7,7 @@
 	objects = {
 
 /* Begin PBXBuildFile section */
+		3BB4D4E61910987B00CD36B2 /* Main_iPhone.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = 3BB4D4E51910987B00CD36B2 /* Main_iPhone.storyboard */; };
 		F99395E118D27C0B0064BB89 /* Foundation.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = F99395E018D27C0B0064BB89 /* Foundation.framework */; };
 		F99395E318D27C0B0064BB89 /* CoreGraphics.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = F99395E218D27C0B0064BB89 /* CoreGraphics.framework */; };
 		F99395E518D27C0B0064BB89 /* UIKit.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = F99395E418D27C0B0064BB89 /* UIKit.framework */; };
@@ -14,7 +15,6 @@
 		F99395ED18D27C0B0064BB89 /* InfoPlist.strings in Resources */ = {isa = PBXBuildFile; fileRef = F99395EB18D27C0B0064BB89 /* InfoPlist.strings */; };
 		F99395EF18D27C0B0064BB89 /* main.m in Sources */ = {isa = PBXBuildFile; fileRef = F99395EE18D27C0B0064BB89 /* main.m */; };
 		F99395F318D27C0B0064BB89 /* SlAppDelegate.m in Sources */ = {isa = PBXBuildFile; fileRef = F99395F218D27C0B0064BB89 /* SlAppDelegate.m */; };
-		F99395F618D27C0B0064BB89 /* Main_iPhone.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = F99395F418D27C0B0064BB89 /* Main_iPhone.storyboard */; };
 		F99395F918D27C0B0064BB89 /* Main_iPad.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = F99395F718D27C0B0064BB89 /* Main_iPad.storyboard */; };
 		F99395FC18D27C0B0064BB89 /* SlViewController.m in Sources */ = {isa = PBXBuildFile; fileRef = F99395FB18D27C0B0064BB89 /* SlViewController.m */; };
 		F99395FF18D27C0B0064BB89 /* SlMyScene.m in Sources */ = {isa = PBXBuildFile; fileRef = F99395FE18D27C0B0064BB89 /* SlMyScene.m */; };
@@ -38,6 +38,7 @@
 /* End PBXContainerItemProxy section */
 
 /* Begin PBXFileReference section */
+		3BB4D4E51910987B00CD36B2 /* Main_iPhone.storyboard */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = file.storyboard; path = Main_iPhone.storyboard; sourceTree = "<group>"; };
 		F99395DD18D27C0B0064BB89 /* bord.app */ = {isa = PBXFileReference; explicitFileType = wrapper.application; includeInIndex = 0; path = bord.app; sourceTree = BUILT_PRODUCTS_DIR; };
 		F99395E018D27C0B0064BB89 /* Foundation.framework */ = {isa = PBXFileReference; lastKnownFileType = wrapper.framework; name = Foundation.framework; path = System/Library/Frameworks/Foundation.framework; sourceTree = SDKROOT; };
 		F99395E218D27C0B0064BB89 /* CoreGraphics.framework */ = {isa = PBXFileReference; lastKnownFileType = wrapper.framework; name = CoreGraphics.framework; path = System/Library/Frameworks/CoreGraphics.framework; sourceTree = SDKROOT; };
@@ -49,7 +50,6 @@
 		F99395F018D27C0B0064BB89 /* bord-Prefix.pch */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = "bord-Prefix.pch"; sourceTree = "<group>"; };
 		F99395F118D27C0B0064BB89 /* SlAppDelegate.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = SlAppDelegate.h; sourceTree = "<group>"; };
 		F99395F218D27C0B0064BB89 /* SlAppDelegate.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; path = SlAppDelegate.m; sourceTree = "<group>"; };
-		F99395F518D27C0B0064BB89 /* Base */ = {isa = PBXFileReference; lastKnownFileType = file.storyboard; name = Base; path = Base.lproj/Main_iPhone.storyboard; sourceTree = "<group>"; };
 		F99395F818D27C0B0064BB89 /* Base */ = {isa = PBXFileReference; lastKnownFileType = file.storyboard; name = Base; path = Base.lproj/Main_iPad.storyboard; sourceTree = "<group>"; };
 		F99395FA18D27C0B0064BB89 /* SlViewController.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = SlViewController.h; sourceTree = "<group>"; };
 		F99395FB18D27C0B0064BB89 /* SlViewController.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; path = SlViewController.m; sourceTree = "<group>"; };
@@ -89,6 +89,15 @@
 /* End PBXFrameworksBuildPhase section */
 
 /* Begin PBXGroup section */
+		3BB4D4E719109E1400CD36B2 /* Controllers */ = {
+			isa = PBXGroup;
+			children = (
+				F99395FA18D27C0B0064BB89 /* SlViewController.h */,
+				F99395FB18D27C0B0064BB89 /* SlViewController.m */,
+			);
+			name = Controllers;
+			sourceTree = "<group>";
+		};
 		F99395D418D27C0B0064BB89 = {
 			isa = PBXGroup;
 			children = (
@@ -125,10 +134,9 @@
 			children = (
 				F99395F118D27C0B0064BB89 /* SlAppDelegate.h */,
 				F99395F218D27C0B0064BB89 /* SlAppDelegate.m */,
-				F99395F418D27C0B0064BB89 /* Main_iPhone.storyboard */,
+				3BB4D4E51910987B00CD36B2 /* Main_iPhone.storyboard */,
 				F99395F718D27C0B0064BB89 /* Main_iPad.storyboard */,
-				F99395FA18D27C0B0064BB89 /* SlViewController.h */,
-				F99395FB18D27C0B0064BB89 /* SlViewController.m */,
+				3BB4D4E719109E1400CD36B2 /* Controllers */,
 				F99395FD18D27C0B0064BB89 /* SlMyScene.h */,
 				F99395FE18D27C0B0064BB89 /* SlMyScene.m */,
 				F993960018D27C0B0064BB89 /* Spaceship.png */,
@@ -246,8 +254,8 @@
 			files = (
 				F993960118D27C0B0064BB89 /* Spaceship.png in Resources */,
 				F993960318D27C0B0064BB89 /* Images.xcassets in Resources */,
+				3BB4D4E61910987B00CD36B2 /* Main_iPhone.storyboard in Resources */,
 				F99395F918D27C0B0064BB89 /* Main_iPad.storyboard in Resources */,
-				F99395F618D27C0B0064BB89 /* Main_iPhone.storyboard in Resources */,
 				F99395ED18D27C0B0064BB89 /* InfoPlist.strings in Resources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
@@ -299,14 +307,6 @@
 				F99395EC18D27C0B0064BB89 /* en */,
 			);
 			name = InfoPlist.strings;
-			sourceTree = "<group>";
-		};
-		F99395F418D27C0B0064BB89 /* Main_iPhone.storyboard */ = {
-			isa = PBXVariantGroup;
-			children = (
-				F99395F518D27C0B0064BB89 /* Base */,
-			);
-			name = Main_iPhone.storyboard;
 			sourceTree = "<group>";
 		};
 		F99395F718D27C0B0064BB89 /* Main_iPad.storyboard */ = {
@@ -405,6 +405,7 @@
 			buildSettings = {
 				ASSETCATALOG_COMPILER_APPICON_NAME = AppIcon;
 				ASSETCATALOG_COMPILER_LAUNCHIMAGE_NAME = LaunchImage;
+				CODE_SIGN_IDENTITY = "iPhone Developer";
 				GCC_PRECOMPILE_PREFIX_HEADER = YES;
 				GCC_PREFIX_HEADER = "bord/bord-Prefix.pch";
 				INFOPLIST_FILE = "bord/bord-Info.plist";
@@ -419,6 +420,7 @@
 			buildSettings = {
 				ASSETCATALOG_COMPILER_APPICON_NAME = AppIcon;
 				ASSETCATALOG_COMPILER_LAUNCHIMAGE_NAME = LaunchImage;
+				CODE_SIGN_IDENTITY = "iPhone Developer";
 				GCC_PRECOMPILE_PREFIX_HEADER = YES;
 				GCC_PREFIX_HEADER = "bord/bord-Prefix.pch";
 				INFOPLIST_FILE = "bord/bord-Info.plist";
@@ -487,6 +489,7 @@
 				F993961B18D27C0B0064BB89 /* Release */,
 			);
 			defaultConfigurationIsVisible = 0;
+			defaultConfigurationName = Release;
 		};
 		F993961C18D27C0B0064BB89 /* Build configuration list for PBXNativeTarget "bordTests" */ = {
 			isa = XCConfigurationList;
@@ -495,6 +498,7 @@
 				F993961E18D27C0B0064BB89 /* Release */,
 			);
 			defaultConfigurationIsVisible = 0;
+			defaultConfigurationName = Release;
 		};
 /* End XCConfigurationList section */
 	};
