@@ -48,8 +48,20 @@ NSString *const SAVED_IMAGE = @"/current_slapping_image.jpg";
         // set the image vie to the image from file, if it exists (otherwise load default).
         [self.myImageView setImage:imageObj];
     }
+    // set-up a timer task...
+    // using e.g: http://stackoverflow.com/questions/1449035/how-do-i-use-nstimer
+    [NSTimer scheduledTimerWithTimeInterval:0.1
+                                    target:self
+                                    selector:@selector(onTick:)
+                                    userInfo:nil
+                                    repeats:YES];
 }
 
+
+-(void)onTick:(NSTimer *)timer {
+    // example timer callback.
+    NSLog(@"onTick: FOO2");
+}
 
 - (BOOL)shouldAutorotate
 {
